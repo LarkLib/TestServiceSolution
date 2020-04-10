@@ -1,0 +1,17 @@
+
+        private void StartWebApp()
+        {
+            try
+            {
+                string url = String.Format("http://{0}:{1}", ConfigurationManager.AppSettings["HostName"], ConfigurationManager.AppSettings["HostPort"]);
+                WebApp.Start<Startup>(url);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                if (MessageBox.Show("宿主服务启动失败，是否继续启动应用程序？", "", MessageBoxButtons.YesNo) != DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+        }

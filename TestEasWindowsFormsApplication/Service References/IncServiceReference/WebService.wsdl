@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ax22="http://communicate.np.inca.com/xsd" xmlns:ax21="http://control.gui.np.inca.com/xsd" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://ws.apache.org/axis2" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://ws.apache.org/axis2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:ax25="http://control.gui.np.inca.com/xsd" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://ws.apache.org/axis2">
+      <xs:import namespace="http://control.gui.np.inca.com/xsd" />
+      <xs:element name="main">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="gensabackdtl">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="args0" type="xs:int" />
+            <xs:element minOccurs="0" name="args1" nillable="true" type="ax25:DBTableModel" />
+            <xs:element minOccurs="0" name="args2" nillable="true" type="ax25:DBTableModel" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportWuliucosDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportStorageDefsDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportSaFetchData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportSaFetchDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportSaData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportSaDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportPosDefsDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportEmployeesDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportDicDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportCustomersDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="exportCompanysDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doSaKeepin">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doSaKeepinResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doSaFetchKeepin">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doSaFetchKeepinResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doMoveout">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doMoveoutResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doMovein">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="args0" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="doMoveinResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema xmlns:ax23="http://control.gui.np.inca.com/xsd" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://communicate.np.inca.com/xsd">
+      <xs:import namespace="http://control.gui.np.inca.com/xsd" />
+      <xs:complexType name="RecordTrunk">
+        <xs:complexContent mixed="false">
+          <xs:extension base="xs:Vector">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="dbValues" nillable="true" type="xs:anyType" />
+              <xs:element minOccurs="0" name="dbdeleted" type="xs:int" />
+              <xs:element minOccurs="0" name="dbstatus" type="xs:int" />
+              <xs:element minOccurs="0" name="filedbmodel" nillable="true" type="ax23:DBTableModel" />
+              <xs:element minOccurs="0" name="grouplevel" type="xs:int" />
+              <xs:element minOccurs="0" name="groupname" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="relatevalue" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="savemessage" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="saveresult" type="xs:int" />
+              <xs:element minOccurs="0" name="sumflag" type="xs:int" />
+              <xs:element minOccurs="0" name="tmppkid" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="wantuploadfile" nillable="true" type="xs:anyType" />
+              <xs:element minOccurs="0" name="wantuploadfiles" nillable="true" type="xs:anyType" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax24="http://communicate.np.inca.com/xsd" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://control.gui.np.inca.com/xsd">
+      <xs:import namespace="http://communicate.np.inca.com/xsd" />
+      <xs:complexType name="DBTableModel">
+        <xs:complexContent mixed="false">
+          <xs:extension base="xs:DefaultTableModel">
+            <xs:sequence>
+              <xs:element minOccurs="0" name="columnCount" type="xs:int" />
+              <xs:element minOccurs="0" name="crosstable" type="xs:boolean" />
+              <xs:element minOccurs="0" name="displaycolumninfos" nillable="true" type="xs:anyType" />
+              <xs:element minOccurs="0" name="fixtablecolumnwidth" type="xs:boolean" />
+              <xs:element minOccurs="0" name="hasmore" type="xs:boolean" />
+              <xs:element minOccurs="0" name="isquerying" type="xs:boolean" />
+              <xs:element minOccurs="0" name="lineresult" nillable="true" type="ax24:RecordTrunk" />
+              <xs:element minOccurs="0" name="lineresults" nillable="true" type="xs:anyType" />
+              <xs:element minOccurs="0" name="modifiedData" nillable="true" type="ax21:DBTableModel" />
+              <xs:element minOccurs="0" name="pkcolname" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="querying" type="xs:boolean" />
+              <xs:element minOccurs="0" name="retrievelistener" nillable="true" type="ax21:DBTableModelEvent" />
+              <xs:element minOccurs="0" name="rowCount" type="xs:int" />
+              <xs:element minOccurs="0" name="selectCMD" nillable="true" type="xs:string" />
+              <xs:element minOccurs="0" name="usequerythread" type="xs:boolean" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="DBTableModelEvent">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="exportSaFetchDataRequest">
+    <wsdl:part name="parameters" element="ns:exportSaFetchData" />
+  </wsdl:message>
+  <wsdl:message name="exportSaFetchDataResponse">
+    <wsdl:part name="parameters" element="ns:exportSaFetchDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="gensabackdtlRequest">
+    <wsdl:part name="parameters" element="ns:gensabackdtl" />
+  </wsdl:message>
+  <wsdl:message name="exportSaDataRequest">
+    <wsdl:part name="parameters" element="ns:exportSaData" />
+  </wsdl:message>
+  <wsdl:message name="exportSaDataResponse">
+    <wsdl:part name="parameters" element="ns:exportSaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="mainRequest">
+    <wsdl:part name="parameters" element="ns:main" />
+  </wsdl:message>
+  <wsdl:message name="exportWuliucosDataRequest" />
+  <wsdl:message name="exportWuliucosDataResponse">
+    <wsdl:part name="parameters" element="ns:exportWuliucosDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportCustomersDataRequest" />
+  <wsdl:message name="exportCustomersDataResponse">
+    <wsdl:part name="parameters" element="ns:exportCustomersDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="doSaFetchKeepinRequest">
+    <wsdl:part name="parameters" element="ns:doSaFetchKeepin" />
+  </wsdl:message>
+  <wsdl:message name="doSaFetchKeepinResponse">
+    <wsdl:part name="parameters" element="ns:doSaFetchKeepinResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportStorageDefsDataRequest" />
+  <wsdl:message name="exportStorageDefsDataResponse">
+    <wsdl:part name="parameters" element="ns:exportStorageDefsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="doMoveoutRequest">
+    <wsdl:part name="parameters" element="ns:doMoveout" />
+  </wsdl:message>
+  <wsdl:message name="doMoveoutResponse">
+    <wsdl:part name="parameters" element="ns:doMoveoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportCompanysDataRequest" />
+  <wsdl:message name="exportCompanysDataResponse">
+    <wsdl:part name="parameters" element="ns:exportCompanysDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="doSaKeepinRequest">
+    <wsdl:part name="parameters" element="ns:doSaKeepin" />
+  </wsdl:message>
+  <wsdl:message name="doSaKeepinResponse">
+    <wsdl:part name="parameters" element="ns:doSaKeepinResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportEmployeesDataRequest" />
+  <wsdl:message name="exportEmployeesDataResponse">
+    <wsdl:part name="parameters" element="ns:exportEmployeesDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportDicDataRequest" />
+  <wsdl:message name="exportDicDataResponse">
+    <wsdl:part name="parameters" element="ns:exportDicDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="exportPosDefsDataRequest" />
+  <wsdl:message name="exportPosDefsDataResponse">
+    <wsdl:part name="parameters" element="ns:exportPosDefsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="doMoveinRequest">
+    <wsdl:part name="parameters" element="ns:doMovein" />
+  </wsdl:message>
+  <wsdl:message name="doMoveinResponse">
+    <wsdl:part name="parameters" element="ns:doMoveinResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServicePortType">
+    <wsdl:operation name="exportSaFetchData">
+      <wsdl:input wsaw:Action="urn:exportSaFetchData" message="ns:exportSaFetchDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportSaFetchDataResponse" message="ns:exportSaFetchDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="gensabackdtl">
+      <wsdl:input wsaw:Action="urn:gensabackdtl" message="ns:gensabackdtlRequest" />
+    </wsdl:operation>
+    <wsdl:operation name="exportSaData">
+      <wsdl:input wsaw:Action="urn:exportSaData" message="ns:exportSaDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportSaDataResponse" message="ns:exportSaDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="main">
+      <wsdl:input wsaw:Action="urn:main" message="ns:mainRequest" />
+    </wsdl:operation>
+    <wsdl:operation name="exportWuliucosData">
+      <wsdl:input wsaw:Action="urn:exportWuliucosData" message="ns:exportWuliucosDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportWuliucosDataResponse" message="ns:exportWuliucosDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="exportCustomersData">
+      <wsdl:input wsaw:Action="urn:exportCustomersData" message="ns:exportCustomersDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportCustomersDataResponse" message="ns:exportCustomersDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="doSaFetchKeepin">
+      <wsdl:input wsaw:Action="urn:doSaFetchKeepin" message="ns:doSaFetchKeepinRequest" />
+      <wsdl:output wsaw:Action="urn:doSaFetchKeepinResponse" message="ns:doSaFetchKeepinResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="exportStorageDefsData">
+      <wsdl:input wsaw:Action="urn:exportStorageDefsData" message="ns:exportStorageDefsDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportStorageDefsDataResponse" message="ns:exportStorageDefsDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="doMoveout">
+      <wsdl:input wsaw:Action="urn:doMoveout" message="ns:doMoveoutRequest" />
+      <wsdl:output wsaw:Action="urn:doMoveoutResponse" message="ns:doMoveoutResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="exportCompanysData">
+      <wsdl:input wsaw:Action="urn:exportCompanysData" message="ns:exportCompanysDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportCompanysDataResponse" message="ns:exportCompanysDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="doSaKeepin">
+      <wsdl:input wsaw:Action="urn:doSaKeepin" message="ns:doSaKeepinRequest" />
+      <wsdl:output wsaw:Action="urn:doSaKeepinResponse" message="ns:doSaKeepinResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="exportEmployeesData">
+      <wsdl:input wsaw:Action="urn:exportEmployeesData" message="ns:exportEmployeesDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportEmployeesDataResponse" message="ns:exportEmployeesDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="exportDicData">
+      <wsdl:input wsaw:Action="urn:exportDicData" message="ns:exportDicDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportDicDataResponse" message="ns:exportDicDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="exportPosDefsData">
+      <wsdl:input wsaw:Action="urn:exportPosDefsData" message="ns:exportPosDefsDataRequest" />
+      <wsdl:output wsaw:Action="urn:exportPosDefsDataResponse" message="ns:exportPosDefsDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="doMovein">
+      <wsdl:input wsaw:Action="urn:doMovein" message="ns:doMoveinRequest" />
+      <wsdl:output wsaw:Action="urn:doMoveinResponse" message="ns:doMoveinResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap11Binding" type="ns:WebServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="exportSaFetchData">
+      <soap:operation soapAction="urn:exportSaFetchData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gensabackdtl">
+      <soap:operation soapAction="urn:gensabackdtl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="exportSaData">
+      <soap:operation soapAction="urn:exportSaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="main">
+      <soap:operation soapAction="urn:main" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="exportCustomersData">
+      <soap:operation soapAction="urn:exportCustomersData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportWuliucosData">
+      <soap:operation soapAction="urn:exportWuliucosData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSaFetchKeepin">
+      <soap:operation soapAction="urn:doSaFetchKeepin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportStorageDefsData">
+      <soap:operation soapAction="urn:exportStorageDefsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doMoveout">
+      <soap:operation soapAction="urn:doMoveout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportCompanysData">
+      <soap:operation soapAction="urn:exportCompanysData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSaKeepin">
+      <soap:operation soapAction="urn:doSaKeepin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportDicData">
+      <soap:operation soapAction="urn:exportDicData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportEmployeesData">
+      <soap:operation soapAction="urn:exportEmployeesData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportPosDefsData">
+      <soap:operation soapAction="urn:exportPosDefsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doMovein">
+      <soap:operation soapAction="urn:doMovein" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12Binding" type="ns:WebServicePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="exportSaFetchData">
+      <soap12:operation soapAction="urn:exportSaFetchData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gensabackdtl">
+      <soap12:operation soapAction="urn:gensabackdtl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="exportSaData">
+      <soap12:operation soapAction="urn:exportSaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="main">
+      <soap12:operation soapAction="urn:main" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="exportCustomersData">
+      <soap12:operation soapAction="urn:exportCustomersData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportWuliucosData">
+      <soap12:operation soapAction="urn:exportWuliucosData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSaFetchKeepin">
+      <soap12:operation soapAction="urn:doSaFetchKeepin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportStorageDefsData">
+      <soap12:operation soapAction="urn:exportStorageDefsData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doMoveout">
+      <soap12:operation soapAction="urn:doMoveout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportCompanysData">
+      <soap12:operation soapAction="urn:exportCompanysData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSaKeepin">
+      <soap12:operation soapAction="urn:doSaKeepin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportDicData">
+      <soap12:operation soapAction="urn:exportDicData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportEmployeesData">
+      <soap12:operation soapAction="urn:exportEmployeesData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportPosDefsData">
+      <soap12:operation soapAction="urn:exportPosDefsData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doMovein">
+      <soap12:operation soapAction="urn:doMovein" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpBinding" type="ns:WebServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="exportSaFetchData">
+      <http:operation location="WebService/exportSaFetchData" />
+      <wsdl:input>
+        <mime:content part="exportSaFetchData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportSaFetchData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gensabackdtl">
+      <http:operation location="WebService/gensabackdtl" />
+      <wsdl:input>
+        <mime:content part="gensabackdtl" type="text/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="exportSaData">
+      <http:operation location="WebService/exportSaData" />
+      <wsdl:input>
+        <mime:content part="exportSaData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportSaData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="main">
+      <http:operation location="WebService/main" />
+      <wsdl:input>
+        <mime:content part="main" type="text/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="exportCustomersData">
+      <http:operation location="WebService/exportCustomersData" />
+      <wsdl:input>
+        <mime:content part="exportCustomersData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportCustomersData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportWuliucosData">
+      <http:operation location="WebService/exportWuliucosData" />
+      <wsdl:input>
+        <mime:content part="exportWuliucosData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportWuliucosData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSaFetchKeepin">
+      <http:operation location="WebService/doSaFetchKeepin" />
+      <wsdl:input>
+        <mime:content part="doSaFetchKeepin" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="doSaFetchKeepin" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportStorageDefsData">
+      <http:operation location="WebService/exportStorageDefsData" />
+      <wsdl:input>
+        <mime:content part="exportStorageDefsData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportStorageDefsData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doMoveout">
+      <http:operation location="WebService/doMoveout" />
+      <wsdl:input>
+        <mime:content part="doMoveout" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="doMoveout" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportCompanysData">
+      <http:operation location="WebService/exportCompanysData" />
+      <wsdl:input>
+        <mime:content part="exportCompanysData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportCompanysData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doSaKeepin">
+      <http:operation location="WebService/doSaKeepin" />
+      <wsdl:input>
+        <mime:content part="doSaKeepin" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="doSaKeepin" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportDicData">
+      <http:operation location="WebService/exportDicData" />
+      <wsdl:input>
+        <mime:content part="exportDicData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportDicData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportEmployeesData">
+      <http:operation location="WebService/exportEmployeesData" />
+      <wsdl:input>
+        <mime:content part="exportEmployeesData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportEmployeesData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="exportPosDefsData">
+      <http:operation location="WebService/exportPosDefsData" />
+      <wsdl:input>
+        <mime:content part="exportPosDefsData" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="exportPosDefsData" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doMovein">
+      <http:operation location="WebService/doMovein" />
+      <wsdl:input>
+        <mime:content part="doMovein" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="doMovein" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceHttpSoap11Endpoint" binding="ns:WebServiceSoap11Binding">
+      <soap:address location="http://192.168.0.213:8080/axis2/services/WebService.WebServiceHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpSoap12Endpoint" binding="ns:WebServiceSoap12Binding">
+      <soap12:address location="http://192.168.0.213:8080/axis2/services/WebService.WebServiceHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpEndpoint" binding="ns:WebServiceHttpBinding">
+      <http:address location="http://192.168.0.213:8080/axis2/services/WebService.WebServiceHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
