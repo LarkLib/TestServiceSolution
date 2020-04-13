@@ -225,7 +225,7 @@ namespace TestEasWindowsFormsApplication
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var sub = "string123".Substring(0, 100);
+            //var sub = "string123".Substring(0, 100);//throw error
             IsolatedStorageFile isoStore = IsolatedStorageFile.GetStore(IsolatedStorageScope.User | IsolatedStorageScope.Assembly, null, null);
             String filePath1 = isoStore.GetType().GetField("m_RootDir", BindingFlags.Instance).GetValue(isoStore).ToString();
 
