@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TetJWTConsoleApp": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}
