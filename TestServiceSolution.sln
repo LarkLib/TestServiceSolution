@@ -60,9 +60,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNRulesConsoleApp", "Tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestJWT", "TestJWT", "{9884B8E7-2DAB-4904-B401-91F8F72F91E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJWTIdentityWebApplication", "TestJWTIdentityWebApplication\TestJWTIdentityWebApplication.csproj", "{AB42762E-2BC5-45E5-87F1-1ECBDDB3C8A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestJWTIdentityWebApplication", "TestJWTIdentityWebApplication\TestJWTIdentityWebApplication.csproj", "{AB42762E-2BC5-45E5-87F1-1ECBDDB3C8A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetJWTConsoleApp", "TetJWTConsoleApp\TetJWTConsoleApp.csproj", "{6B660474-ED8A-44B0-BBEC-340CB9242EEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TetJWTConsoleApp", "TetJWTConsoleApp\TetJWTConsoleApp.csproj", "{6B660474-ED8A-44B0-BBEC-340CB9242EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRedisConsoleApp", "TestRedisConsoleApp\TestRedisConsoleApp.csproj", "{98007454-29AB-4B1E-ACAD-8D946392B5B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestRedis", "TestRedis", "{AEBE0395-7D50-451B-8085-182503D18670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRedisPubConsoleApp", "TestRedisPubConsoleApp\TestRedisPubConsoleApp.csproj", "{035F10A1-8829-4D19-A227-56E09CA2F59B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -414,6 +420,30 @@ Global
 		{6B660474-ED8A-44B0-BBEC-340CB9242EEA}.Release|iPhone.Build.0 = Release|Any CPU
 		{6B660474-ED8A-44B0-BBEC-340CB9242EEA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{6B660474-ED8A-44B0-BBEC-340CB9242EEA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Release|iPhone.Build.0 = Release|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Release|iPhone.Build.0 = Release|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{035F10A1-8829-4D19-A227-56E09CA2F59B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -424,6 +454,8 @@ Global
 		{5C6D5A2B-EECB-4904-BE10-09F4A1D7525C} = {B11B536E-EE40-463E-922C-10B4EDEC95C3}
 		{AB42762E-2BC5-45E5-87F1-1ECBDDB3C8A4} = {9884B8E7-2DAB-4904-B401-91F8F72F91E6}
 		{6B660474-ED8A-44B0-BBEC-340CB9242EEA} = {9884B8E7-2DAB-4904-B401-91F8F72F91E6}
+		{98007454-29AB-4B1E-ACAD-8D946392B5B9} = {AEBE0395-7D50-451B-8085-182503D18670}
+		{035F10A1-8829-4D19-A227-56E09CA2F59B} = {AEBE0395-7D50-451B-8085-182503D18670}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AA38B3E-A11B-4AE9-AA5C-4B56894B4D85}
