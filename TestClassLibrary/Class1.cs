@@ -17,7 +17,7 @@ namespace TestClassLibrary
             Uri p = new Uri(codebase);
             string localPath = p.LocalPath;
             string executingFilename = System.IO.Path.GetFileNameWithoutExtension(localPath);
-            string sectionGroupName = "appSettings";
+            //string sectionGroupName = "appSettings";
             string sectionName = executingFilename + ".Properties.Settings";
             string configName = localPath + ".config";
             ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();

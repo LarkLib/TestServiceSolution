@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestWebApiVersionWebApplication</name>
+    </assembly>
+    <members>
+        <member name="M:TestWebApiVersionWebApplication.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get Weather forecast
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

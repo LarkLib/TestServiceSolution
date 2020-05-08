@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestSwaggerWebApplication</name>
+    </assembly>
+    <members>
+        <member name="M:TestSwaggerWebApplication.Controllers.TestController.GetTodoItem(System.String)">
+             <summary>
+             Get todo item
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Item1",
+                    "isComplete": true
+                 }
+             </remarks>
+             <param name="name">a name from client</param>
+             <returns>a todo item list </returns>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:TestSwaggerWebApplication.Controllers.TestController.GetHelloWorld(System.String)">
+            <summary>
+            Say hello to world
+            </summary>
+            <param name="name">name</param>
+            <returns>hello world string</returns>
+        </member>
+    </members>
+</doc>
